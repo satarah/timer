@@ -1,0 +1,173 @@
+
+:root {
+  --placed-times-height:    100vh;
+
+  --timer-controls-height: 50px;
+  --time-display-height:   80px;
+  --place-button-height:   80px;
+  --text-controls-height:  50px;
+
+  --background-color: chartreuse;
+  --selected-color:   limegreen;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--background-color);
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button:active {
+  /* background-color: red; */
+}
+
+button:hover {
+  /* background-color: pink; */
+}
+
+#timer-controls {
+  width: 100vw;
+}
+
+#timer-controls > button {
+  height: var(--timer-controls-height);
+}
+
+#start-pause-button {
+  width: 40vw;
+  border-width: 0 1px 1px 0;
+}
+
+#reset-button {
+  width: 40vw;
+  border-width: 0 1px 1px 0;
+}
+
+#milli-button {
+  width: 20vw;
+  border-width: 0 0 1px;
+}
+
+#time-display {
+  width: 100vw;
+  height: var(--time-display-height);
+  line-height: 80px;
+  font-size: 3em;
+  text-align: center;
+}
+
+#place-time-button {
+  width: 100vw;
+  height: var(--place-button-height);
+  border-width: 1px 0;
+}
+
+#placed-times {
+  margin: -5px 0;
+  padding: 4px;
+  font-size: 14pt;
+  line-height: 16pt;
+}
+
+#placed-times {
+  width: 100vw;
+  height: calc( 100vh
+    - var(--timer-controls-height)
+    - var(--time-display-height)
+    - var(--place-button-height)
+    - var(--text-controls-height)
+  );
+  overflow-y: auto;
+}
+
+#text-controls {
+  width: 100vw;
+}
+
+#text-controls > button {
+  height: var(--text-controls-height);
+}
+
+#copy-text-button {
+  width: 50vw;
+  border-width: 1px 1px 0 0;
+}
+
+#clear-text-button {
+  width: 50vw;
+  border-width: 1px 0 0;
+}
+
+.start {
+  background: url("../icon/start.png") no-repeat center center;
+}
+
+.pause {
+  background: url("../icon/pause.png") no-repeat center center / 35px;
+}
+
+.resume {
+  background: url("../icon/resume.png") no-repeat center center;
+}
+
+.reset {
+  background: url("../icon/reset.png") no-repeat center center / 35px;
+}
+
+.milli {
+  background: url("../icon/milli.png") no-repeat center center / 32px;
+}
+
+.place {
+  background: url("../icon/place.png") no-repeat center center;
+}
+
+.copy {
+  background: url("../icon/copy.png") no-repeat center center / 32px;
+}
+
+.clear {
+  background: url("../icon/clear.png") no-repeat center center;
+}
+
+.selected {
+  background-color: var(--selected-color);
+}
+
+#alert-box {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+
+  border: 1px solid;
+  border-radius: 5px;
+  background: var(--background-color);
+
+  opacity: 0;
+  transition: opacity 1.0s ease-in-out;
+}
+
+#alert-box.show {
+  opacity: 1;
+}
