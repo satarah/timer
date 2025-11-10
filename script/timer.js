@@ -24,7 +24,6 @@ function registerApp() {
 
   startPauseButton = document.getElementById('start-pause-button');
   resetButton = document.getElementById('reset-button');
-
   milliButton = document.getElementById('milli-button')
   placeTimeButton = document.getElementById('place-time-button');
   copyTextButton = document.getElementById('copy-text-button');
@@ -53,7 +52,7 @@ let difference;
 
 function toggleTimer(event) {
 
-  let classList = event.target.classList;
+  let classList = event.currentTarget.classList;
 
   if (classList.contains('start')) {
 

@@ -8,11 +8,14 @@
   --text-controls-height:  50px;
 
   --background-color: chartreuse;
+  /* --background-color: #7fff00; */
   --selected-color:   limegreen;
+  /* --selected-color: #32CD32; rgb 50 205 50 */
 }
 
 * {
   box-sizing: border-box;
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -51,17 +54,17 @@ button:hover {
 
 #start-pause-button {
   width: 40vw;
-  border-width: 0 1px 1px 0;
+  border-width: 1px 1px 1px 0;
 }
 
 #reset-button {
   width: 40vw;
-  border-width: 0 1px 1px 0;
+  border-width: 1px 1px 1px 0;
 }
 
 #milli-button {
   width: 20vw;
-  border-width: 0 0 1px;
+  border-width: 1px 0 1px;
 }
 
 #time-display {
