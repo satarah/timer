@@ -5,22 +5,22 @@ const VERSION = '0.1.4';
 const CACHE_NAME = `race-timer-v${VERSION}`;
 
 const STATIC_FILES = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/style/timer.css',
-  '/script/timer.js',
-  '/icon/laguna.png',
-  '/icon/start.png',
-  '/icon/pause.png',
-  '/icon/resume.png',
-  '/icon/reset.png',
-  '/icon/milli.png',
-  '/icon/place.png',
-  '/icon/copy.png',
-  '/icon/save.png',
-  '/icon/load.png',
-  '/icon/clear.png'
+  './',
+  './index.html',
+  './manifest.json',
+  './style/timer.css',
+  './script/timer.js',
+  './icon/laguna.png',
+  './icon/start.png',
+  './icon/pause.png',
+  './icon/resume.png',
+  './icon/reset.png',
+  './icon/milli.png',
+  './icon/place.png',
+  './icon/copy.png',
+  './icon/save.png',
+  './icon/load.png',
+  './icon/clear.png'
 ];
 
 // CACHE STATIC FILES
