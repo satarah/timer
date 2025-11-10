@@ -5,7 +5,7 @@
   "description": "Clock your race and save points in time to locate key moments later",
   "icons": [
     {
-      "src": "/icon/laguna.png",
+      "src": "./icon/laguna.png",
       "sizes": "512x512"
     }
   ],
