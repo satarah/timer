@@ -6,6 +6,8 @@
   --time-display-height:   80px;
   --place-button-height:   80px;
   --text-controls-height:  50px;
+  --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0);
 
   --background-color: chartreuse;
   /* --background-color: #7fff00; */
@@ -95,6 +97,7 @@ button:hover {
     - var(--time-display-height)
     - var(--place-button-height)
     - var(--text-controls-height)
+    - var(--safe-area-inset-bottom)
   );
   overflow-y: auto;
 }
