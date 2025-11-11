@@ -4,7 +4,7 @@
 
   --timer-controls-height: 50px;
   --time-display-height:   80px;
-  --place-button-height:   80px;
+  --place-button-height:   180px;
   --text-controls-height:  50px;
   --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
   --safe-area-inset-bottom: env(safe-area-inset-bottom, 0);
