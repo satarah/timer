@@ -1,15 +1,16 @@
 
 :root {
-  --placed-times-height:    100vh;
 
+  --dynamic-vertical-height: 100dvh;
   --timer-controls-height: 50px;
   --time-display-height:   80px;
-  /* --place-button-height:   280px; */
+  /* --place-button-height:   80px; */
   --place-button-height:   50vh;
+  /* --placed-times-height:   100vh; */
   --text-controls-height:  50px;
   /* --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px); */
   /* --safe-area-inset-bottom: env(safe-area-inset-bottom); */
-  --safe-area-inset-bottom: 50px;
+  /* --safe-area-inset-bottom: 50px; */
 
   --background-color: chartreuse;
   /* --background-color: #7fff00; */
@@ -32,7 +33,7 @@ body {
 main {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
 }
 
 button {
@@ -94,13 +95,13 @@ button:hover {
 
 #placed-times {
   width: 100vw;
-  height: calc( 100vh
+  height: calc( 100dvh
     - var(--timer-controls-height)
     - var(--time-display-height)
     - var(--place-button-height)
     - var(--text-controls-height)
-    - var(--safe-area-inset-bottom)
   );
+  /* - var(--safe-area-inset-bottom) */
   overflow-y: auto;
 }
 
@@ -108,7 +109,7 @@ button:hover {
   /* position: fixed; */
   /* bottom: var(--safe-area-inset-bottom); */
   width: 100vw;
-  padding-bottom: var(--safe-area-inset-bottom);
+  /* padding-bottom: var(--safe-area-inset-bottom); */
 }
 
 #text-controls > button {
