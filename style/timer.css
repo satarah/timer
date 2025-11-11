@@ -162,6 +162,11 @@ button:hover {
 #alert-box {
   position: absolute;
   top: 70%;
+  top: calc( 50px
+    + var(--timer-controls-height)
+    + var(--time-display-height)
+    + var(--place-button-height)
+  );
   left: 20px;
   right: 20px;
 
