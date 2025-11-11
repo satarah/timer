@@ -7,8 +7,9 @@
   /* --place-button-height:   280px; */
   --place-button-height:   50vh;
   --text-controls-height:  50px;
-  --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
+  /* --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px); */
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  /* --safe-area-inset-bottom: 50px; */
 
   --background-color: chartreuse;
   /* --background-color: #7fff00; */
@@ -104,8 +105,8 @@ button:hover {
 }
 
 #text-controls {
-  position: fixed;
-  bottom: var(--safe-area-inset-bottom);
+  /* position: fixed; */
+  /* bottom: var(--safe-area-inset-bottom); */
   width: 100vw;
 }
 
