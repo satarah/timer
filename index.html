@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <title>Race Timer</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <!-- <meta name="mobile-web-app-capable" content="yes"> -->
+  <link rel="icon" href="icon/favicon.png" type="image/png">
   <link rel="stylesheet" href="style/timer.css">
-  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes"> -->
   <link rel="manifest" href="manifest.json">
   <script src="script/timer.js"></script>
   <script>
@@ -14,7 +15,6 @@
       navigator.serviceWorker.register("worker.js")
     }
   </script>
-  <title>Race Timer</title>
 </head>
 <body>
   <main>
@@ -24,13 +24,13 @@
       <button class="milli" id="milli-button">&nbsp;</button>
     </section>
     <section id="time-display">00:00:00</section>
-    <button class="place" id="place-time-button"></button>
+    <button class="place" id="place-time-button">&nbsp;</button>
     <textarea id="placed-times"></textarea>
     <section id="text-controls">
-      <button class="copy" id="copy-text-button"></button>
-      <button class="clear" id="clear-text-button"></button>
+      <button class="copy" id="copy-text-button">&nbsp;</button>
+      <button class="clear" id="clear-text-button">&nbsp;</button>
     </section>
   </main>
-  <div id="alert-box"></div>
+  <div id="alert-box">&nbsp;</div>
 </body>
 </html>

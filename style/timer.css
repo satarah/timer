@@ -1,21 +1,22 @@
 
+/***
+
+Theme Colors:
+chartreuse #7fff00
+limegreen #32CD32 rgb 50 205 50
+
+***/
+
 :root {
 
   --dynamic-vertical-height: 100dvh;
   --timer-controls-height: 50px;
   --time-display-height:   80px;
-  /* --place-button-height:   80px; */
   --place-button-height:   50vh;
-  /* --placed-times-height:   100vh; */
   --text-controls-height:  50px;
-  /* --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px); */
-  /* --safe-area-inset-bottom: env(safe-area-inset-bottom); */
-  /* --safe-area-inset-bottom: 50px; */
 
   --background-color: chartreuse;
-  /* --background-color: #7fff00; */
   --selected-color:   limegreen;
-  /* --selected-color: #32CD32; rgb 50 205 50 */
 }
 
 * {
@@ -101,15 +102,11 @@ button:hover {
     - var(--place-button-height)
     - var(--text-controls-height)
   );
-  /* - var(--safe-area-inset-bottom) */
   overflow-y: auto;
 }
 
 #text-controls {
-  /* position: fixed; */
-  /* bottom: var(--safe-area-inset-bottom); */
   width: 100vw;
-  /* padding-bottom: var(--safe-area-inset-bottom); */
 }
 
 #text-controls > button {
@@ -118,12 +115,12 @@ button:hover {
 
 #copy-text-button {
   width: 50vw;
-  border-width: 1px 1px 0 0;
+  border-width: 1px 1px 1px 0;
 }
 
 #clear-text-button {
   width: 50vw;
-  border-width: 1px 0 0;
+  border-width: 1px 0 1px;
 }
 
 .start {

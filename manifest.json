@@ -1,6 +1,6 @@
 {
   "id": "race_timer/v1",
-  "short_name": "RT",
+  "short_name": "Timer",
   "name": "Race Timer",
   "description": "Clock your race and save points in time to locate key moments later",
   "icons": [

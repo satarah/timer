@@ -1,7 +1,7 @@
 
 // https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = '0.1.14';
+const VERSION = '0.1.16';
 const CACHE_NAME = `race-timer-v${VERSION}`;
 
 const STATIC_FILES = [
@@ -10,6 +10,7 @@ const STATIC_FILES = [
   './manifest.json',
   './style/timer.css',
   './script/timer.js',
+  './icon/favicon.png',
   './icon/laguna.png',
   './icon/start.png',
   './icon/pause.png',
@@ -31,6 +32,7 @@ self.addEventListener('install', (event) => {
       cache.addAll(STATIC_FILES);
     })(),
   );
+  self.skipWaiting();
 });
 
 // CLEAR OLD CACHES, CLAIM ACTIVE CLIENTS
