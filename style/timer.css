@@ -108,6 +108,7 @@ button:hover {
   /* position: fixed; */
   /* bottom: var(--safe-area-inset-bottom); */
   width: 100vw;
+  margin-bottom: var(--safe-area-inset-bottom);
 }
 
 #text-controls > button {
