@@ -1,7 +1,7 @@
 
 // https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/CycleTracker/Service_workers
 
-const VERSION = '0.1.7';
+const VERSION = '0.1.8';
 const CACHE_NAME = `race-timer-v${VERSION}`;
 
 const STATIC_FILES = [
